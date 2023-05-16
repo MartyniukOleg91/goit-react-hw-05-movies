@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 axios.defaults.baseURL = 'https://api.themoviedb.org/3';
-const API_KEY = '0cafd553b6a217ff7b99743b1693af60';
+const API_KEY = 'f80c5afd8737d8b54483408440a37aea';
 
 export const fetchTrending = async () => {
   const params = {
