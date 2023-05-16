@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import { Header, Navigation, PageLink } from './Layout.styled';
+import { Header, Navigation, PageLink } from './Style/Layout.styled';
 
 const Layout = () => {
   return (

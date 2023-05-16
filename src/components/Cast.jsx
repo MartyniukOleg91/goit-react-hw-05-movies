@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchCast } from 'services/api';
-import { CastItem, CastInfo } from './Cast.styled';
+import { CastItem, CastInfo } from './Style/Cast.styled';
 
 const Cast = () => {
   const [cast, setCast] = useState([]);

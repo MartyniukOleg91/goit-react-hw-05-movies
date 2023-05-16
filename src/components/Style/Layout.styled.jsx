@@ -7,15 +7,19 @@ export const Header = styled.header`
   left: 0;
   width: 100%;
   min-height: 60px;
-  background-color: #e7e7e7;
+  background: content-box radial-gradient(green, skyblue);
   box-shadow: 0px 1px 10px 2px #414141;
   display: flex;
   align-items: center;
+  text-align: center;
+  justify-content: center;
 `;
 
 export const Navigation = styled.nav`
   display: flex;
-  gap: 8px;
+  gap: 180px;
+  justify-content: center;
+  text-align: center;
 `;
 
 export const PageLink = styled(NavLink)`
@@ -23,11 +27,12 @@ export const PageLink = styled(NavLink)`
   color: inherit;
   font-size: 24px;
   padding: 16px;
-  transition: color 400ms ease;
+  transition: color 600ms ease;
+  text-align: center;
 
   &:hover,
   &:focus,
   &:active {
-    color: #ff7341;
+    color: yellow;
   }
 `;
