@@ -1,7 +1,7 @@
 import { Outlet, useLocation, useParams } from 'react-router-dom';
 import { useEffect, useState, useRef } from 'react';
 import { fetchOneMovie } from 'services/api';
-import { RxArrowLeft, RxArrowRight } from 'react-icons/rx';
+
 import {
   BackButton,
   DetailsContainer,
@@ -40,10 +40,7 @@ const MovieDetails = () => {
 
   return (
     <DetailsContainer>
-      <BackButton to={backLinkLocationRef.current}>
-        <RxArrowLeft />
-        Go back
-      </BackButton>
+      <BackButton to={backLinkLocationRef.current}>Go back</BackButton>
       <MovieInfo>
         {posterPath && (
           <img src={`${imageUrl}${posterPath}`} alt={movie.title} />
@@ -68,16 +65,10 @@ const MovieDetails = () => {
         <h3>Additional information</h3>
         <AdditionalList>
           <li>
-            <SubMenuLink to="cast">
-              <RxArrowRight />
-              Cast
-            </SubMenuLink>
+            <SubMenuLink to="cast">Cast</SubMenuLink>
           </li>
           <li>
-            <SubMenuLink to="reviews">
-              <RxArrowRight />
-              Reviews
-            </SubMenuLink>
+            <SubMenuLink to="reviews">Reviews</SubMenuLink>
           </li>
         </AdditionalList>
         <Outlet />

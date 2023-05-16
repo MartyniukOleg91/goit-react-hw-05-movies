@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <HomeContainer>
       <HomeTitle>Trending movies</HomeTitle>
-      {!!movies.length && <MoviesList movies={movies} />}
+      {!movies.length && <MoviesList movies={movies} />}
     </HomeContainer>
   );
 };
