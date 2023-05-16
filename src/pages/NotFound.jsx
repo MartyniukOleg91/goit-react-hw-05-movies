@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { NotFoundContainer, HomeButton } from './NotFound.styled';
+import { NotFoundContainer, HomeButton } from './Styles/NotFound.styled';
 
 const NotFound = () => {
   const navigate = useNavigate();

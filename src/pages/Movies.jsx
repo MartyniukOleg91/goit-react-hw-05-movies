@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import { DebounceInput } from 'react-debounce-input';
 import { fetchSearchResult } from 'services/api';
 import MoviesList from 'components/MoviesList';
-import { MoviesContainer } from './Movies.styled';
+import { MoviesContainer } from './Styles/Movies.styled';
 
 const Movies = () => {
   const [movies, setMovies] = useState([]);

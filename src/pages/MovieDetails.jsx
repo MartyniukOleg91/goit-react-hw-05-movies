@@ -9,7 +9,7 @@ import {
   AdditionalInfo,
   AdditionalList,
   SubMenuLink,
-} from './MovieDetails.styled';
+} from './Styles/MovieDetails.styled';
 
 const MovieDetails = () => {
   const [movie, setMovie] = useState({});

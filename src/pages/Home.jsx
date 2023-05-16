@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { HomeContainer, HomeTitle } from './Home.styled';
+import { HomeContainer, HomeTitle } from './Styles/Home.styled';
 import { fetchTrending } from 'services/api';
 import MoviesList from 'components/MoviesList';
 

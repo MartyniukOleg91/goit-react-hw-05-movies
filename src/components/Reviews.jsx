@@ -30,12 +30,16 @@ const Reviews = () => {
     return formattedDate;
   }
 
+  const listStyle = {
+    listStyle: 'none',
+  };
+
   return (
     <>
       {reviews.length > 0 ? (
         <ul>
           {reviews.map(review => (
-            <li key={review.id}>
+            <li key={review.id} style={listStyle}>
               <h3>Author: {review.author}</h3>
               <p>Date of create: {formatDate(review.created_at)}</p>
               <p>{review.content}</p>
