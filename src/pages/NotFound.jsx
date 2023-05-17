@@ -10,10 +10,7 @@ const NotFound = () => {
   return (
     <NotFoundContainer>
       <h1>Page not found</h1>
-      <p>
-        Sorry, the page you're looking for doesn't exist. If you think something
-        is broken, report a problem.
-      </p>
+      <p>Sorry, the page you're looking for doesn't exist.</p>
       <HomeButton type="button" onClick={handleGoHome}>
         Go home
       </HomeButton>
